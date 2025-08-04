@@ -1,0 +1,38 @@
+/* partners-section.css */
+
+.partners-section {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.partners-section h2 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout for Brand Logos */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Logo Styling */
+.partners-grid img {
+  width: 140px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: grayscale(60%);
+}
+
+.partners-grid img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
